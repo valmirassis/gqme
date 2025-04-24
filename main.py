@@ -2,6 +2,7 @@ from langchain_google_genai import GoogleGenerativeAI
 from langchain.prompts import PromptTemplate
 from dotenv import load_dotenv
 import streamlit as st
+import os
 
 load_dotenv()
 llm = GoogleGenerativeAI(model="models/gemini-1.5-pro-latest")
@@ -14,7 +15,7 @@ model = prompt | llm
 st.set_page_config(page_title="Gerador de Questões")
 st.header("Gerador de questões")
 
-codigo_valido = "Pata9onia"
+codigo_valido = os.getenv("CODIGO_ACESSO")
 codigo = st.text_input("Informe o código de acesso", type="password")
 
 if codigo == codigo_valido:
