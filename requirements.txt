@@ -2,3 +2,6 @@ langchain
 langchain-google-genai
 python-dotenv
 streamlit
+langchain-community
+tempfile
+os
