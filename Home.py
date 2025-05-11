@@ -1,0 +1,11 @@
+import streamlit as st
+st.set_page_config(page_title="Gerador de Questões Múltipla Escolha")
+st.header("Gerador de Questões Múltipla Escolha", divider=True)
+st.write("Projeto desenvolvido para a disciplina de sistemas inteligentes - Semestre 2025/1")
+st.write("Mestrado em Computação aplicada (UDESC)")
+st.write("**Professor:** Rafael Stubs Parpinelli")
+st.write("**Mestrando:** Valmir Ribeiro de Assis")
+st.write("")
+st.write()
+st.warning("**Antes de gerar as questões, leia as informações no menu lateral**")
+st.divider()
