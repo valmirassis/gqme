@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 import os
 import tempfile
 import numpy as np
-import time
+
 load_dotenv()
 llm = GoogleGenerativeAI(model="models/gemini-1.5-pro-latest", temperature=0.8)
 
